@@ -105,5 +105,9 @@ namespace Silk.NET.WebGPU.Extensions.Disposal
         {
             _webGpu.RenderBundleEncoderRelease(renderBundleEncoder);
         }
+
+        public void Dispose(SwapChain* swapChain)
+        {
+            _webGpu.SwapChainRelease(swapChain);
     }
 }
